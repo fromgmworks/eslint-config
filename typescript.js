@@ -49,5 +49,7 @@ module.exports = {
     // Use Typescript's no-shadow to avoid false positives,
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['warn'],
+    // Typescript can handle exhaustive matches
+    'default-case': 'off',
   },
 };

@@ -5,7 +5,7 @@ module.exports = {
   extends: require.resolve('eslint-config-airbnb-base'),
   parser: '@babel/eslint-parser',
   parserOptions: {
-    requireConfigFile: false
+    requireConfigFile: false,
   },
   env: {
     browser: true,
@@ -60,7 +60,8 @@ module.exports = {
     }],
     // This rule is wrong most of the time
     'import/no-extraneous-dependencies': 'off',
-    'import/prefer-default-export': 'warn',
+    // Not as useful in modules these days
+    'import/prefer-default-export': 'off',
     'import/extensions': 'off',
     // Always wrap arrow functions in parens. No x => x
     'arrow-parens': ['error', 'always'],
@@ -125,5 +126,7 @@ module.exports = {
     // Use Typescript to catch return types.
     'consistent-return': 'off',
     'max-classes-per-file': 'off',
+    // Useful for singleton patterns
+    'no-new': 'off',
   },
 };
