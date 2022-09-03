@@ -3,7 +3,10 @@
  */
 module.exports = {
   extends: require.resolve('eslint-config-airbnb-base'),
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    requireConfigFile: false
+  },
   env: {
     browser: true,
     es6: true,

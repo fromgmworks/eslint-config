@@ -7,7 +7,7 @@ module.exports = {
     require.resolve('eslint-config-airbnb/rules/react-a11y'),
   ],
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2022,
     ecmaFeatures: {
       jsx: true,
     },

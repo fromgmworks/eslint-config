@@ -1,6 +1,9 @@
 {
   "extends": [
-    "./index.js"
+    "./index.js",
+    // "./react.js",
+    // "./typescript.js",
+    // "./prettier.js",
   ],
   "rules": {
     "quote-props": "off"
